@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7+^ngj*s1snq@&jorg+zde1x8d6+iwl051$%z9+z#k3e+ewc^r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['bgmarts.herokuapp.com','127.0.0.1']
-
+ALLOWED_HOSTS = []
+#'bgmarts.herokuapp.com','127.0.0.1'
 
 # Application definition
 
@@ -118,12 +118,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
-STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR,'static')
+# STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'staticfiles')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR,'staticfiles')
+# ]
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 
