@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+    <head>
+    <style>
+        
+        img {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          padding: 5px;
+          width: 150px;
+          -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.5);
+	-moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,.5);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.5);
+
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+        }
+    </style>
+    </head>
+<body>
+<p>Click on the image to download it:</p>
+<a href="/media/superhappy.jpg" download>
+<img style="width: 50%;height: 400px" src="/media/superhappy.jpg" alt="what happened" /></a>
+</body>
