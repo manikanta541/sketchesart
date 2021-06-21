@@ -3,8 +3,8 @@ import urllib.request
 from django.core.files.storage import FileSystemStorage
 import cv2
 # Create your views here.
-def home(request):
-    return render(request,'home.html')
+def index(request):
+    return render(request,'index.html')
 def files(request):
     if request.method=='POST':
         upfiles = request.FILES['document']
